@@ -20,3 +20,8 @@ Best doc is on [GH repo](https://github.com/sinatra/sinatra)
 - integrate template
 - Add logo, portrait
 - Create 'technologies' page
+
+Tools:
+- Heroku
+- [Bulma CSS lib](https://bulma.io/documentation/overview/start/)
+- Mail through MailChimp ?
