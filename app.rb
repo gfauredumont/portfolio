@@ -17,3 +17,7 @@ end
 get '/methode' do
   "Analyser l'existant et trouver les points qui coutent le plus cher (en temps donc en argent) et les optimiser"
 end
+
+get '/partager' do
+  "La connaissance est une de ces rares ressources dont les échanges sont à somme positive<br>EPITA, ACD, ACU, Yaka, Ing#<br>Communauté Ruby de Paris (ParisRB, WomenOnRails, Workshop, RubyMentors)<br>ESGI"
+end
