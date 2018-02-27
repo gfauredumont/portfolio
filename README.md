@@ -25,3 +25,5 @@ Tools:
 - Heroku
 - [Bulma CSS lib](https://bulma.io/documentation/overview/start/)
 - Mail through MailChimp ?
+
+Theme inspired by [Sensible](https://modernthemes.net/wordpress-themes/sensible/)  ([demo](https://modernthemes.net/theme-demos/?theme=Sensible))
