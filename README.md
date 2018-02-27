@@ -13,9 +13,6 @@ Best doc is on [GH repo](https://github.com/sinatra/sinatra)
 
 ##### TODO
 
-- create 'views' and 'img' directories
-- integrate HAML
-- separate pages into views files
 - write each one
 - integrate template
 - Add logo, portrait
@@ -27,3 +24,8 @@ Tools:
 - Mail through MailChimp ?
 
 Theme inspired by [Sensible](https://modernthemes.net/wordpress-themes/sensible/)  ([demo](https://modernthemes.net/theme-demos/?theme=Sensible))
+
+
+Photos:
+https://unsplash.com/collections/869015/flood
+https://unsplash.com/search/photos/orange
