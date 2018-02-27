@@ -5,10 +5,11 @@ RUN echo 'gem: --no-document' > /root/.gemrc
 
 RUN mkdir /sinatra
 
-WORKDIR /sinatra
+WORKDIR /tmp
 COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 RUN bundle install
+RUN bundle lock
 
 ADD . /sinatra
 WORKDIR /sinatra
