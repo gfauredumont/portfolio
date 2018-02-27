@@ -10,6 +10,10 @@ get '/cv' do
   haml  :cv
 end
 
+get '/webdev' do
+  haml  :webdev
+end
+
 get '/constat' do
   haml  :constat
 end
@@ -20,4 +24,8 @@ end
 
 get '/partager' do
   haml  :partager
+end
+
+get '/technologies' do
+  haml  :technologies
 end
