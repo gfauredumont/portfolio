@@ -5,7 +5,7 @@ RUN echo 'gem: --no-document' > /root/.gemrc
 
 RUN mkdir /sinatra
 
-WORKDIR /tmp
+WORKDIR /sinatra
 COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 RUN bundle install
