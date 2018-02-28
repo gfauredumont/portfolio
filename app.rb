@@ -1,9 +1,25 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 set :bind, '0.0.0.0'
+
+set :views, :scss => 'assets/stylesheets', :default => 'views'
+# set :views, :sass => 'assets/stylesheets', :haml => 'templates', :default => 'views'
+
+helpers do
+  def find_template(views, name, engine, &block)
+    _, folder = views.detect { |k,v| engine == Tilt[k] }
+    folder ||= views[:default]
+    super(folder, name, engine, &block)
+  end
+end
 
 
 get '/' do
   haml :index
+end
+
+get '/css/app.css' do
+  scss :app
 end
 
 get '/cv' do
