@@ -3,7 +3,6 @@ require "sinatra/reloader" if development?
 set :bind, '0.0.0.0'
 
 set :views, :scss => 'assets/stylesheets', :default => 'views'
-# set :views, :sass => 'assets/stylesheets', :haml => 'templates', :default => 'views'
 
 helpers do
   def find_template(views, name, engine, &block)
