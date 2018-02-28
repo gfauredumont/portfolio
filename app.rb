@@ -29,3 +29,7 @@ end
 get '/technologies' do
   haml  :technologies
 end
+
+get '/zikme' do
+  haml  :zikme
+end
