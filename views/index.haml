@@ -9,6 +9,9 @@
     %link{:href => '/css/app.css', :rel => 'stylesheet'}/
     %script{:defer => 'defer', :src => 'https://use.fontawesome.com/releases/v5.0.6/js/all.js'}
   %body
+
+    = haml :_navbar
+
     %section.section
       .container
         %h1.title
@@ -39,19 +42,4 @@
           %a{:href => 'https://www.linkedin.com/in/guillaume-faure-dumont', :target => '_blank'}<>
             complet (sur LinkedIn)
 
--# %a{:href => '/cv'} CV
--# %br
--# %a{:href => '/webdev'} Développeur Web
--# %br
--# %a{:href => '/constat'} constat
--# %br
--# %a{:href => '/methode'} methode
--# %br
--# %a{:href => '/partager'} partager
--# %br
--# %a{:href => '/technologies'} technologies
--# %br
--# %a{:href => '/zikme'} ZikMe.org
--# %br
-
-
+    = haml :_footer
