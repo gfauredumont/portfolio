@@ -1,27 +1,36 @@
-%h1.title
-  Guillaume FAURE-DUMONT
-%p.subtitle
-  J'aide des startup numériques à&nbsp
-  %a{:href => '/methode'}<>
-    augmenter leur productivité technique
-  %br
-  Je suis aussi&nbsp
-  %a{:href => '/webdev'}<>
-    développeur full stack Ruby On Rails
-  %br
-  Je suis le co-fondateur de&nbsp
-  %a{:href => '/zikme'}<>
-    ZikMe.org
-  , l'encyclopédie collaborative de la musique
-  %br
-  Je&nbsp
-  %a{:href => '/partager'}<>
-    partage
-  &nbspaussi mes connaissances dans divers groupes de formation/mentorat
-  %br
-  Mon CV&nbsp
-  %a{:href => '/cv'}<>
-    version courte
-  &nbsp/&nbsp
-  %a{:href => 'https://www.linkedin.com/in/guillaume-faure-dumont', :target => '_blank'}<>
-    complet (sur LinkedIn)
+.container
+  .columns{:style => 'background-color: rgba(245,245,245,0.4); margin-top: 50px; border-radius: 5px'}
+    .column.is-one-quarter.is-offset-1
+      %img{:alt => 'Guillaume FAURE-DUMONT', :src => 'img/gfd.jpg', :style => 'border-radius: 50%'}/
+    .column{:style => 'align-self: center; margin: 0 5%;'}
+      %h1.title
+        Guillaume FAURE-DUMONT
+      %p.subtitle{:style => 'margin-top: 20px; line-height: 1.5;'}
+        J'aide des startup numériques à&nbsp
+        %a{:href => '/methode'}<>
+          augmenter leur productivité technique
+        %br
+        Je suis aussi
+        %a{:href => '/webdev'}
+          %strong<
+            développeur full stack
+        Ruby On Rails
+        %br
+        Je suis le co-fondateur de&nbsp
+        %a{:href => '/zikme'}<>
+          ZikMe.org
+        , l'encyclopédie collaborative de la musique
+        %br
+        Je
+        %a{:href => '/partager'}
+          partage
+        aussi mes connaissances dans divers groupes de
+        %strong
+          formation/mentorat
+        %br
+        Mon CV&nbsp
+        %a{:href => '/cv'}<>
+          version courte
+        &nbsp/&nbsp
+        %a{:href => 'https://www.linkedin.com/in/guillaume-faure-dumont', :target => '_blank'}<>
+          complet (sur LinkedIn)

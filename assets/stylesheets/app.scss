@@ -1,12 +1,72 @@
 body {
+  display:          flex;
+  min-height:       100vh;
+  flex-direction:   column;
 
-  a {
-    color: #F08A24;
+  .main-content {
+    flex:     1;
+    z-index:  2;
+  }
+
+  .index-bg.container.is-fluid {
+    background-color: #263d36;
+    background-image: url('/img/sergey-pesterev-222160-unsplash.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    // padding: 10vw 2em;
+    text-align: center;
+    margin:     0;
+    position:   absolute;
+    width:      100%;
+    height:     100%;
+    z-index:    -1;
+
+    .bg-source-link {
+      position: absolute;
+      left:     5px;
+      top:      69vh;
+      z-index:  99;
+      opacity:  0.5;
+    }
+  }
+
+  .navbar {
+    // background-color:  #F5F5F5;
+    background-color: rgba(245,245,245,0.4);
+
+    .navbar-brand {
+      .navbar-item {
+        padding-top:    0;
+        padding-bottom: 0;
+
+        img {
+          height:         52px;
+          max-height:     52px;
+          // border-radius:  3px;
+          border-radius:  50%;
+        }
+      }
+    }
+  }
+
+  a,a strong {
+    // color: #F08A24;
+    color: #00C3FF;
+
     &:visited {
-      color: #F16002;
+      // color: #F16002;
+      color: #0088B2;
     }
     &:hover {
-      color: #F88840;
+      // color: #F88840;
+      color: #0088B2;
     }
+  }
+
+  footer.footer {
+    background-color: rgba(245,245,245,0.7);
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
   }
 }

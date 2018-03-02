@@ -14,6 +14,7 @@ end
 
 
 get '/' do
+  @page = 'index'
   haml :index
 end
 

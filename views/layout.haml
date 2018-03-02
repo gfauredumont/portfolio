@@ -10,12 +10,13 @@
     %script{:defer => 'defer', :src => 'https://use.fontawesome.com/releases/v5.0.6/js/all.js'}
   %body
 
+    = haml :_background_image
+
     = haml :_navbar
 
-    %section.section
-      .container
+    %section.section.main-content
 
-        = yield
+      = yield
 
 
     = haml :_footer
