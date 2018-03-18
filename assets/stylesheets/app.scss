@@ -10,12 +10,12 @@ body {
 
   .index-bg.container.is-fluid {
     background-color: #263d36;
-    background-image: url('/img/sergey-pesterev-222160-unsplash.jpg');
+    background-image: url('/img/bg/sergey-pesterev-222160-unsplash.jpg');
+    // background-image: url('/img/bg/thomas-kelley-64329-unsplash.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.2;
-    // padding: 10vw 2em;
     text-align: center;
     margin:     0;
     position:   absolute;
@@ -33,7 +33,6 @@ body {
   }
 
   .navbar {
-    // background-color:  #F5F5F5;
     background-color: rgba(245,245,245,0.4);
 
     .navbar-brand {
@@ -65,8 +64,16 @@ body {
     }
   }
 
-  footer.footer {
+  .img-logo {
+    width:      48px;
+    height:     48px;
+  }
+
+  .default-container {
     background-color: rgba(245,245,245,0.7);
+  }
+
+  footer.footer {
     padding: 1rem 1.5rem 2.5rem 1.5rem;
   }
 }
