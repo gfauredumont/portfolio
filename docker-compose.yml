@@ -1,9 +1,19 @@
-web:
-  build: .
-  volumes:
-    - .:/sinatra
-  ports:
-    - "4567:4567"
-  # env_file:
-  #   - '.env.web'
-  command: bundle exec ruby app.rb
+version: '3.5'
+services:
+
+  web:
+    build: .
+    volumes:
+      - .:/sinatra
+    ports:
+      - "4567:4567"
+    # env_file:
+    #   - '.env.web'
+    command: bundle exec ruby app.rb
+    networks:
+      - sinatra_external
+
+networks:
+  sinatra_external:
+    name: sinatra_external
+    external: true
