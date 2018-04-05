@@ -71,6 +71,12 @@ body {
 
   .default-container {
     background-color: rgba(245,245,245,0.7);
+
+    .note {
+      padding:          10px;
+      background-color: rgba(238, 238, 238, 0.4);
+      margin:           20px 0;
+    }
   }
 
   footer.footer {
