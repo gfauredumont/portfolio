@@ -1,15 +1,16 @@
 FROM ruby:2.5.0
 MAINTAINER Guillaume FAURE-DUMONT
-# RUN apt-get update -qq && apt-get install -y build-essential
+
+RUN apt-get update -qq && apt-get install -y curl wget
+
 RUN echo 'gem: --no-document' > /root/.gemrc
 
 RUN mkdir /sinatra
 
-WORKDIR /tmp
-COPY Gemfile Gemfile
-COPY Gemfile.lock Gemfile.lock
+COPY Gemfile /sinatra/Gemfile
+COPY Gemfile.lock /sinatra/Gemfile.lock
+
+WORKDIR /sinatra
 RUN bundle install
-RUN bundle lock
 
 ADD . /sinatra
-WORKDIR /sinatra
