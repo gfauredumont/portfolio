@@ -21,6 +21,7 @@ Best doc is on [GH repo](https://github.com/sinatra/sinatra)
 Tools:
 - Heroku
 - [Bulma CSS lib](https://bulma.io/documentation/overview/start/)
+  + https://jgthms.com/web-design-in-4-minutes/#header
 - Mail through MailChimp ?
 
 Theme inspired by [Sensible](https://modernthemes.net/wordpress-themes/sensible/)  ([demo](https://modernthemes.net/theme-demos/?theme=Sensible))
