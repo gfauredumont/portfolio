@@ -11,9 +11,8 @@ services:
     #   - '.env.web'
     command: bundle exec ruby app.rb
     networks:
-      - sinatra_external
+      - sinatra
 
 networks:
-  sinatra_external:
-    name: sinatra_external
-    external: true
+  sinatra:
+    name: sinatra
